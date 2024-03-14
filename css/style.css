@@ -1,0 +1,310 @@
+/* CSS RESET */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    /* border: 1px solid; */
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* CSS VARIABLES */
+
+/* NAVBAR*/
+header {
+    position: relative;
+    color: rgb(11, 11, 11);
+    /* color: rgb(182, 69, 230); */
+    font-weight: 500;
+    font-size: 0.98rem;
+}
+
+.websitename h1 {
+    font-weight: 500;
+}
+
+.websitename h1 i{
+    color: transparent;
+    background-image: linear-gradient(75deg, rgba(22, 37, 103, 0.941) 10%, rgba(230, 2, 101, 0.736));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.bannercolor {
+    position: fixed;
+    background-color: rgba(249, 250, 251);
+    /* width: 100%; */
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 999;
+}
+
+.stick {
+    /* position: sticky; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 12px 12px;
+}
+
+section::before {
+    content: "";
+    background: url(/img/banner1.jpg)no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 723.8px;
+    z-index: -2;
+}
+
+.backcol::before {
+    content: "";
+    background: linear-gradient(75deg, rgb(22 37 103 / 84%) 10%, rgb(230 2 100 / 37%));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 723.8px;
+    z-index: -1;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+}
+
+header nav ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 12px 12px;
+    color: rgb(11, 11, 11);
+    font-size: 0.98rem;
+}
+
+.websitename {
+    width: 35vw;
+}
+
+/* HOME */
+section {
+    height: 723.8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionh2 h2 {
+    font-size: 3.25rem;
+    width: 76vw;
+    padding-bottom: 26px;
+}
+
+.sectionp p {
+    font-size: 1.5rem;
+    width: 76vw;
+}
+
+.btn button {
+    padding: 12px 32px;
+    border-radius: 4px;
+    border: none;
+    background-color: white;
+    color: rgb(4, 2, 51);
+    font-size: 1rem;
+}
+
+.btn2 {
+    width: 76vw;
+    margin-top: 50px;
+}
+
+/* SERVICES */
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(226, 224, 223, 0.241);
+}
+
+.servicesheading {
+    text-align: center;
+}
+
+.servicesheading h2 {
+    font-size: 2.5rem;
+    margin-top: 60px;
+}
+
+.servicesheading p {
+    font-size: 1.4rem;
+    margin: 12px 0;
+}
+
+.btn3 button {
+    background-color: rgb(223, 22, 82);
+    color: white;
+}
+
+.btn3 button:hover {
+    color: rgb(223, 22, 82);
+    background-color: white;
+    border: 1px solid rgb(223, 22, 82);
+}
+
+.btn3 {
+    padding-bottom: 60px;
+}
+
+.servicesr1,
+.servicesr2,
+.servicesr1c1,
+.servicesr1c2,
+.servicesr2c1,
+.servicesr2c2 {
+    display: flex;
+}
+
+.servicesr1c1,
+.servicesr1c2,
+.servicesr2c1,
+.servicesr2c2 {
+    margin: 18px 18px;
+    padding: 50px 50px;
+    background-color: white;
+    border-radius: 9px;
+    box-shadow: 0 2px 2px 1px rgba(226, 224, 223, 0.412);
+}
+
+.sevicestypes {
+    width: 78vw;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.icons i {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: transparent;
+    background-image: linear-gradient(75deg, rgba(22, 37, 103, 0.941) 10%, rgba(230, 2, 101, 0.736));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.servicesr1 p,
+.servicesr2 p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    font-size: 0.98rem;
+    color: rgb(52, 51, 51);
+}
+
+.servicesr1 a,
+.servicesr2 a {
+    text-decoration: none;
+    color: rgb(31, 31, 31);
+}
+
+.servicesr1 h3,
+.servicesr2 h3 {
+    font-size: 1.3rem;
+    font-weight: 550;
+}
+
+/* CONTACT INFO */
+
+.contact{
+    background: linear-gradient(75deg, rgb(22, 37, 103) 10%, rgba(230, 2, 101, 0.976));
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.contact>div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 92vw;
+}
+
+.contact>div>div {
+    margin: 60px 0;
+}
+
+.contact ul li {
+    list-style: none;
+}
+
+.contact ul li a {
+    text-decoration: none;
+    color: rgb(224, 222, 222);
+    font-weight: 160;
+    font-size: 0.95rem;
+    margin: 13px 0;
+    display: block;
+}
+
+.contact .lastcol ul li a {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.contact .lastcol{
+    margin-right: 86px;
+}
+
+.contact h3 {
+    margin: 25px 0;
+    margin-top: 12px;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* FOOTER */
+
+footer .foot {
+    padding: 16px 0;
+    width: 78vw;
+    font-size: 0.93rem;
+    font-weight: 450;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .foot span {
+    font-weight: 500;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.foot .iconspartner{
+    display: flex;
+}
+
+.foot .iconspartner div{
+    margin: 0 5.5px;
+    width: 19px;
+    padding: 7px 5.5px;
+    display: flex;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(16, 16, 125, 0.933);
+}
+
+.foot .iconspartner div i{
+    color: white;
+}
